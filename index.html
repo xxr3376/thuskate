@@ -7,6 +7,21 @@
 <title> 清华大学轮滑爱好者协会 </title>
 <link href="asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+.bizmail_loginpanel{font-size:12px;width:450px !important;height:auto;}
+.bizmail_LoginBox{padding:10px 15px;}
+.bizmail_loginpanel h3{ display: none;}
+.bizmail_loginpanel form{margin:0;padding:0;}
+.bizmail_loginpanel input.text{font-size:12px;width:100px;height:20px;margin:0 2px;border:1px solid #C3C3C3;border-color:#7C7C7C #C3C3C3 #C3C3C3 #9A9A9A;}
+.bizmail_loginpanel .bizmail_column{height:28px;}
+.bizmail_loginpanel label{display:inline-block;font-size:12px;margin-left:8px;}
+.bizmail_loginpanel .bizmail_column .bizmail_inputArea{float:left;width:240px;}
+.bizmail_loginpanel .bizmail_column span{font-size:12px;word-wrap:break-word;margin-left: 2px;line-height:200%;}
+.bizmail_loginpanel .bizmail_SubmitArea{margin-left:30px;clear:both;}
+.bizmail_loginpanel a{display: none;}
+.bizmail_loginpanel select{width:110px;height:20px;margin:0 2px;}
+</style>
+<script type="text/javascript" src="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  charset="gb18030"></script>
 <body>
 <style>
 body {
@@ -32,7 +47,13 @@ h1, h2, h3, h4, h5, h6 {
 </style>
 <div class="container" id="main-wrap">
 	<div class="page-header">
-		<h1>清华大学轮滑爱好者协会 <small> THUSKATE </small></h1>
+		<h1>清华大学轮滑爱好者协会
+		<span class="pull-right">
+			<script type="text/javascript">
+writeLoginPanel({domainlist:"thuskate.org", mode:"horizontal"});
+			</script>
+		</span>
+		</h1>
 	</div>
 	<div class="row">
 		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8
@@ -171,8 +192,8 @@ h1, h2, h3, h4, h5, h6 {
 
 <script>
 $(function() {
-	$('#image').carousel();
-});
+		$('#image').carousel();
+		});
 </script>
 </body>
 </html>
